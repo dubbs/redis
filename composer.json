@@ -1,0 +1,12 @@
+{
+    "name": "dubbs/redis",
+    "require": {
+        "predis/predis": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Kevin Warrington",
+            "email": "kevin.warrington@gmail.com"
+        }
+    ]
+}
