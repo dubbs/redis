@@ -22,7 +22,7 @@ $client->zadd('post:date', 20120304, 4);
 // find posts within range
 $postIds = $client->zrangebyscore('post:date', 20100101, 20111231);
 
-// retrieve posts by id
+// retrieve posts by id, eg. $client->hmget('posts', 1, 2);
 $posts = call_user_func_array(
 	array($client, "hmget"),
 	array_merge(array('posts'), $postIds)
